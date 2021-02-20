@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpScreen"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtSignup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/sfbold"
+        android:text="Sign up"
+        android:textColor="@color/darkgray"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtFName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
+
+    <EditText
+        android:id="@+id/txtFName"
+        android:layout_width="310dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:fontFamily="@font/sflight"
+        android:hint="First Name"
+        android:textColor="@color/darkgray"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/darkgray"
+        app:layout_constraintBottom_toTopOf="@+id/txtLName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtLName"
+        android:layout_width="310dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:fontFamily="@font/sflight"
+        android:hint="Last Name"
+        android:textColor="@color/darkgray"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/darkgray"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEmail2"
+        android:layout_width="310dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:fontFamily="@font/sflight"
+        android:textColor="@color/darkgray"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/darkgray"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPassword2"
+        android:layout_width="310dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:fontFamily="@font/sflight"
+        android:hint="Password"
+        android:textColor="@color/darkgray"
+        android:inputType="textPassword"
+        android:textColorHint="@color/darkgray"
+        app:layout_constraintBottom_toTopOf="@+id/btnFSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnFSignUp"
+        android:layout_width="137dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="236dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/sflight"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
